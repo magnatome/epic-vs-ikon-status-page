@@ -9,7 +9,7 @@ status-website:
   cname: status.epicorikon.com
   logoUrl: https://raw.githubusercontent.com/magnatome/epic-vs-ikon-status-page/master/assets/favicon.png
   favicon: https://raw.githubusercontent.com/magnatome/epic-vs-ikon-status-page/master/assets/favicon.png
-  name: Epic vs Ikon
+  name: Epic vs Ikon Status
   theme: light
   metaTags:
     - name: 'robots'
