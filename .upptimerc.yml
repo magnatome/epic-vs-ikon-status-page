@@ -23,3 +23,11 @@ status-website:
       href: https://www.epicorikon.com/map
 i18n:
   footer: This page is powered by [Upptime](https://upptime.js.org)
+workflowSchedule:
+  uptime: "0,5,10,15,20,25,30,35,40,45,50,55 * * * *" # Check every 5 minutes
+  responseTime: "51 */1 * * *" # Check response time every hour
+  graphs: "55 */3 * * *" # Generate graphs every 3 hours
+  staticSite: "58 */3 * * *"  # Generate static site every 3 hours
+  summary: "59 23 * * *" # Generate summary at the end of each day
+  updateTemplate: "0 0 * * 2" # Update the template every Tuesday
+  updates: "0 0 1,15 * *" # Check for package updates twice a month
