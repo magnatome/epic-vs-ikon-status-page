@@ -26,17 +26,17 @@ status-website:
 i18n:
   footer: This page is powered by [Upptime](https://upptime.js.org)
 workflowSchedule:
-  # Check every 6 minutes, except 54 because response time also checks uptime
-  uptime: "0,6,12,18,24,30,36,42,48 * * * *"
+  # Check status every 10 minutes, except 50 past because response time also checks uptime
+  uptime: "0,10,20,30,40 * * * *"
   # Check response time every hour
-  responseTime: "54 */1 * * *"
+  responseTime: "50 * * * *"
   # Generate graphs every 3 hours
   graphs: "55 */3 * * *"
-  # Generate static site every 3 hours
-  staticSite: "58 */3 * * *"
-  # Generate summary at the end of each day
-  summary: "59 23 * * *"
-  # Update the template every Tuesday
-  updateTemplate: "0 0 * * 2"
+  # Generate summary at the end of each day (MT)
+  summary: "5 8 * * *"
+  # Re-generate static site code every Tuesday
+  staticSite: "5 8 * * 2"
+  # Update the template every Wednesday
+  updateTemplate: "5 8 * * 3"
   # Check for package updates twice a month
-  updates: "0 0 1,15 * *"
+  updates: "1 0 1,15 * *"
