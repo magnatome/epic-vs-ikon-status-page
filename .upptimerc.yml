@@ -1,20 +1,25 @@
-# Change these first
-owner: magnatome # Your GitHub organization or username, where this repository lives
-repo: epic-vs-ikon-status-page # The name of this repository
-
+owner: magnatome
+repo: epic-vs-ikon-status-page
 sites:
   - name: Epic vs Ikon
     url: https://www.epicorikon.com
-
+  - name: Resort Map
+    url: https://www.epicorikon.com/map
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
   cname: status.epicorikon.com
   logoUrl: https://raw.githubusercontent.com/magnatome/epic-vs-ikon-status-page/master/assets/favicon.png
+  favicon: https://raw.githubusercontent.com/magnatome/epic-vs-ikon-status-page/master/assets/favicon.png
   name: Epic vs Ikon
+  theme: light
+  metaTags:
+    - name: 'robots'
+      content: 'noindex'
   navbar:
     - title: Status
       href: /
-    - title: Website
+    - title: Home
       href: https://www.epicorikon.com
-
+    - title: Resorts Map
+      href: https://www.epicorikon.com/map
+  i18n:
+    footer: This page is powered by [Upptime](https://upptime.js.org)
