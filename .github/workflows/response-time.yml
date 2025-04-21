@@ -17,7 +17,7 @@
 name: Response Time CI
 on:
   schedule:
-    - cron: "52 */6 * * *"
+    - cron: "0 4,16 * * *"
   repository_dispatch:
     types: [response_time]
   workflow_dispatch:
